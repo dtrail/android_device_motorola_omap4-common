@@ -189,7 +189,7 @@ static ssize_t store_governor(struct device *dev,
 
 static DEVICE_ATTR(frequency_list, 0444, show_frequency_list, NULL);
 static DEVICE_ATTR(frequency_request, 0444, show_frequency_request, NULL);
-static DEVICE_ATTR(frequency_limit, 0644, show_frequency_limit, NULL);
+static DEVICE_ATTR(frequency_limit, 0644, show_frequency_limit, store_frequency_limit);
 static DEVICE_ATTR(frequency, 0444, show_frequency, NULL);
 static DEVICE_ATTR(governor_list, 0444, show_governor_list, NULL);
 static DEVICE_ATTR(governor, 0644, show_governor, store_governor);
