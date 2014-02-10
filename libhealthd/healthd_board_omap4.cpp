@@ -19,7 +19,7 @@
 
 void healthd_board_init(struct healthd_config *config)
 {
-    config->batteryCapacityPath = "/sys/class/power_supply/battery/charge_counter";
+    config->batteryCapacityPath = "/sys/class/power_supply/battery/capacity";
 }
 
 
